@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Homepage | Alessandro Orrico</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="data:image/png;base64,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" type="image/gif" sizes="16x16">
+
+
+  </head>
+
+  <body>
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Alessandro Orrico</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://source.unsplash.com/1600x900/?medicine" class="d-block w-100" alt="..." width="1000px" height="auto">
+        </div>
+        <div class="carousel-item">
+          <img src="https://source.unsplash.com/1600x900/?doctor" class="d-block w-100" alt="..." width="1000px" height="auto">
+        </div>
+        <div class="carousel-item">
+          <img src="https://source.unsplash.com/1600x900/?pro" class="d-block w-100" alt="..." width="1000px" height="auto">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev" height="auto">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <br>
+
+    <div class="container">
+      <div class="row">
+      <div class="col-md-10">
+        <h2>About me</h2>
+        <p>Hi, I am Alessandro <br> I am a medical doctor and this is a little story about me</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" style="margin-top: 20px;">
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Special title treatment</h5>
+              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+  </body>
+</html>
